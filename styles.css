@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --first-color: hsl(260, 96%, 65%);
+    --white-color: hsl(0, 0%, 100%);
+    --text-color: hsl(0, 0%, 52%);
+    --title-color: hsl(0, 0%, 0%);
+    --body-color: hsl(260, 96%, 65%);
+
+    --body-font: 'Bai Jamjuree', sans-serif;
+    --big-font: 1.3rem;
+    --h2-font: .900rem;
+    --small-font: .800rem;
+
+    --weight-bold: 700;
+    --weight-medium: 600;
+    --weight-semi-bold: 500;
+    --weight-regular: 400;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.currency__image {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 10rem;
+}
+
+.main {
+    position: static;
+    background-color: var(--white-color);
+    width: 250px;
+    height: 514px;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.currency {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.currency select,
+.currency input,
+.convert__button {
+    width: 100%;
+    height: 1.9rem;
+    border-radius: .100rem;
+}
+
+.currency select,
+.currency input {
+    border: 1px solid var(--text-color);
+    background-color: var(--white-color);
+    font-weight: var(--weight-medium);
+    padding-left: 6px;
+}
+
+.currency select {
+    appearance: none;
+    cursor: pointer;
+}
+
+.currency input {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    color: var(--title-color);
+}
+
+.convert__button {
+    border: none;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    font-weight: var(--weight-medium);
+    cursor: pointer;
+}
+
+.convert__button:hover {
+    opacity: 0.7;
+}
+
+.convert__values {
+    border: 1px solid var(--first-color);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: .700rem;
+    margin-top: 1rem;
+   
+}
+
+.convert__values img {
+    width: 30px;
+}
+
+.convert__values img,
+.convert__values p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+label,
+input,
+p {
+    font-size: var(--h2-font);
+    color: var(--text-color);
+    font-weight: var(--weight-bold);
+}
+
+.values {
+    font-size: var(--big-font);
+    color: var(--title-color);
+    font-weight: var(--weight-bold);
+}
